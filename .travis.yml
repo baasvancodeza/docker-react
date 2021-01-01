@@ -8,4 +8,4 @@ before_install:
   - docker build -t baasvancodeza/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true baasvancodeza/docker-react npm run test
+  - docker run baasvancodeza/docker-react npm run test -- --coverage
