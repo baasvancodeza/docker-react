@@ -13,10 +13,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "eu-west-1"
-  app: "docker-react-training"
-  env: "DockerReactTraining-env"
+  app: "docker-react-test"
+  env: "DockerReactTest-env"
   bucket_name: "elasticbeanstalk-eu-west-1-211332116103"
-  bucket_path: "docker-react-training"
+  bucket_path: "docker-react-test"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
